@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigate_mainFragment">
+
+    <fragment
+        android:id="@+id/navigate_mainFragment"
+        android:name="com.lovecalculator.ui.result_.ResultFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/navigate_resultFragment"
+        android:name="com.lovecalculator.ui.calculate_result.CalculateResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
+    <fragment
+        android:id="@+id/navigate_onBoardingFragment"
+        android:name="com.lovecalculator.ui.onboarding.OnBoardingFragment"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding" />
+    <fragment
+        android:id="@+id/navigate_historyFragment"
+        android:name="com.lovecalculator.ui.history.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+
+    <activity
+        android:id="@+id/hilt_MainActivity"
+        android:name="com.geeks.lovecalculator.Hilt_MainActivity"
+        android:label="Hilt_MainActivity" />
+
+</navigation>
